@@ -125,11 +125,6 @@ body {
     }
 }
 
-@media (max-width: 767px) {
-    .header h1 {
-        font-size: 1.5em;  /* Even smaller font size for mobile */
-    }
-
 .release h2 {
     color: #333;
     border-bottom: 2px solid #eee;
@@ -186,3 +181,9 @@ a:hover {
     transform: translateY(-50%); /* Fine-tune vertical alignment */
     color: #32CD32; /* Simple green color for the icon */
 }
+
+
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 1.5em;  /* Even smaller font size for mobile */
+    }
