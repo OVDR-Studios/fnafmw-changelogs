@@ -31,7 +31,7 @@ body {
 
 .main-website-link {
     font-family: 'Dosis', sans-serif;
-    font-weight: 500; /* Bold on hover */
+    font-weight: 600; /* Bold on hover */
     position: absolute;
     top: 20px; /* Adjust as needed */
     left: 20px; /* Adjust as needed */
@@ -45,6 +45,7 @@ body {
 
 .main-website-link:hover {
     font-weight: 700; /* Bold on hover */
+    color: #008000; /* Change color as needed */
 }
 
 .search-box {
