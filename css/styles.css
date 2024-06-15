@@ -30,6 +30,7 @@ body {
 }
 
 .main-website-link {
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 20px; /* Adjust as needed */
     left: 20px; /* Adjust as needed */
