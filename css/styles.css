@@ -140,7 +140,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: 006600;
+    color: #006600;
 }
 
 .changeTitle {
@@ -166,6 +166,12 @@ a:hover {
     margin-bottom: 10px; /* Space between each download link */
     position: relative; /* Needed for absolute positioning of the icon */
     padding-left: 25px; /* Space for the icon */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+    color: #005163;
 }
 
 .download-link i {
