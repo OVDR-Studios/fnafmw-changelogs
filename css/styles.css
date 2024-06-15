@@ -29,6 +29,11 @@ body {
     margin-right: auto;
 }
 
+@media (max-width: 767px) {
+    .header {
+        font-size: 1em;  /* Even smaller font size for mobile */
+    }
+
 .main-website-link {
     font-family: 'Dosis', sans-serif;
     font-weight: 600; /* Bold on hover */
