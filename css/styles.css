@@ -30,7 +30,7 @@ body {
 }
 
 @media (max-width: 767px) {
-    .header {
+    .header h1 {
         font-size: 1em;  /* Even smaller font size for mobile */
     }
 
