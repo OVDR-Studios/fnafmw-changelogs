@@ -29,11 +29,6 @@ body {
     margin-right: auto;
 }
 
-@media (max-width: 767px) {
-    .header h1 {
-        font-size: 1.5em;  /* Even smaller font size for mobile */
-    }
-
 .main-website-link {
     font-family: 'Dosis', sans-serif;
     font-weight: 600; /* Bold on hover */
@@ -129,6 +124,11 @@ body {
         margin: 0 auto 20px; /* Centers the image and adds space below before text */
     }
 }
+
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 1.5em;  /* Even smaller font size for mobile */
+    }
 
 .release h2 {
     color: #333;
