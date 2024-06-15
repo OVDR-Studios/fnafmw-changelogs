@@ -139,7 +139,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #006600;
 }
 
@@ -170,7 +170,7 @@ a:hover {
 }
 
 .download-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #005163;
 }
 
