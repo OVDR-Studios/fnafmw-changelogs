@@ -44,7 +44,6 @@ body {
 }
 
 .main-website-link:hover {
-    font-weight: 700; /* Bold on hover */
     color: #005f73; /* Change color as needed */
 }
 
