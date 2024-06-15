@@ -60,20 +60,7 @@ body {
     padding: 8px;
     border-radius: 10px;
     outline: none;
-}
-
-.search-box button {
-    padding: 8px 10px;
-    background: #555;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 8px; /* Ensures some space between the input and the button */
-}
-
-.search-box button:hover {
-    background: #666;
+    font-family: 'Dosis', sans-serif;
 }
 
 .container {
