@@ -135,7 +135,7 @@ a {
     color: green;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 a:hover {
@@ -166,7 +166,7 @@ a:hover {
     margin-bottom: 10px; /* Space between each download link */
     position: relative; /* Needed for absolute positioning of the icon */
     padding-left: 25px; /* Space for the icon */
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .download-link:hover {
