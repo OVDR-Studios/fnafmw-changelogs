@@ -43,7 +43,7 @@ body {
 }
 
 .main-website-link:hover {
-    font-weight: bold; /* Bold on hover */
+    font-weight: 700; /* Bold on hover */
 }
 
 .search-box {
