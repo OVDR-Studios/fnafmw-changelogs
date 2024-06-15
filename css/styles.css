@@ -32,7 +32,7 @@ body {
 .main-website-link {
     position: absolute;
     top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
     text-decoration: none;
     color: #FFF; /* Change color as needed */
     font-size: 16px; /* Adjust as needed */
