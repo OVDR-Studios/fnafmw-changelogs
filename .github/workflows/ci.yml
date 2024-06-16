@@ -15,7 +15,7 @@ jobs:
     - name: Update version file
       run: |
         echo "{\"version\": \"$(date +%Y%m%d.%H%M)\"}" > version.json
-        cat public/version.json  # Debug: Print the contents of the file to the log
+        cat version.json  # Debug: Print the contents of the file to the log
 
     - name: Commit and push if changed
       run: |
