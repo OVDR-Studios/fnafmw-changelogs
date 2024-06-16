@@ -63,6 +63,20 @@ body {
     outline: none;
 }
 
+.sort-filters {
+    text-align: center;
+    color: gray;
+    font-size: 1em;
+    margin-bottom: 10px; /* Space before the buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-filters i {
+    margin-right: 5px; /* Space between the icon and the text */
+}
+
 .category-buttons button {
     margin-right: 10px;
     border: 0px solid #ccc;
@@ -77,7 +91,6 @@ body {
     color: white;
     border-color: #007bff;
 }
-
 
 .container {
     width: 80%;
