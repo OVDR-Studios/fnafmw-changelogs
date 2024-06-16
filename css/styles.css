@@ -135,6 +135,11 @@ body {
     color: #333;
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+}
+
+.release h2:hover {
+    transform: scale(1.1); /* Slightly enlarges the text on hover */
 }
 
 a {
