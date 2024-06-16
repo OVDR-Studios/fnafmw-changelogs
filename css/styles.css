@@ -225,12 +225,12 @@ a:hover {
 }
 
 .notice-container {
-    background-color: #9b870c; /* Yellow background */
+    background-color: #FFD700; /* Yellow background */
     color: white; /* White text */
     /* border-radius: 5px; Rounded corners */
     display: flex; /* Flexbox to align icon and text */
     width: 80%;
-    margin: 20px auto;
+    /*margin: 20px auto; */
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
