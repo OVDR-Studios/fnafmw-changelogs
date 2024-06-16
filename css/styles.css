@@ -55,6 +55,13 @@ body {
     margin-top: 10px; /* Adds space between the title and the search box */
 }
 
+.search-icon {
+    position: absolute; /* Position the icon absolutely within the relative container */
+    left: 10px; /* Distance from the left edge of the input box */
+    color: gray; /* Icon color */
+    z-index: 10; /* Ensure the icon is above the input background */
+}
+
 .search-box input[type="text"] {
     flex-grow: 1; /* Allows the input to expand to fill available space */
     border: 2px solid #E7E7E7;
