@@ -31,7 +31,6 @@
     </div>
     <div class="container">
         <div class="category-buttons">
-            <button onclick="filterCategory('all')">All</button>
             <button onclick="filterCategory('updates')">Updates</button>
             <button onclick="filterCategory('bug-fixes')">Bug Fixes</button>
         </div>
@@ -50,16 +49,38 @@
         <!-- More versions with images and descriptions can be added here -->
     </div>
     <script>
-    function filterCategory(category) {
-        const releases = document.getElementsByClassName('release');
-        Array.from(releases).forEach(function(release) {
-            if (category === 'all' || release.getAttribute('data-category') === category) {
+function filterCategory(category) {
+    const active = document.querySelector('.category-buttons button.active');
+    const releases = document.getElementsByClassName('release');
+
+    if (active && active.getAttribute('data-category') === category) {
+        // If the active category is clicked again, remove the active state and show all
+        active.classList.remove('active');
+        Array.from(releases).forEach(release => release.style.display = '');
+    } else {
+        // Otherwise, process as normal, marking the clicked category as active
+        document.querySelectorAll('.category-buttons button').forEach(button => {
+            if (button.getAttribute('data-category') === category) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+        Array.from(reases).forEach(release => {
+            if (release.getAttribute('data-category') === category) {
                 release.style.display = '';
             } else {
                 release.style.display = 'none';
             }
         });
     }
+}
+
+document.querySelectorAll('.category-buttons button').forEach(button => {
+    button.addEventListener('click', function() {
+        filterCategory(button.getAttribute('data-category'));
+    });
+});
 
     // Enhance the searchVersions function to keep the filter context
     function searchVersions() {
@@ -77,14 +98,6 @@
             }
         });
     }
-
-// Optional: Function to handle active button styling
-document.querySelectorAll('.category-buttons button').forEach(button => {
-    button.addEventListener('click', function() {
-        document.querySelectorAll('.category-buttons button').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-    });
-});
     </script>
 </body>
 </html>
