@@ -103,15 +103,15 @@ body {
 }
 
 .category-label {
-    display: block;
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
+    display: inline-block; /* Makes the label inline */
+    background-color: #4CAF50; /* Green background to match your example, adjust as needed */
+    color: white;
     text-align: center;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    border-radius: 10px; /* Rounded corners */
-    font-size: 0.9em;
+    padding: 2px 8px; /* Adjust padding to make it smaller */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.85em; /* Slightly smaller text */
     font-weight: bold;
+    margin-right: 10px; /* Space between the category and the title */
 }
 
 .release {
