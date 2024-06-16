@@ -49,38 +49,40 @@
         <!-- More versions with images and descriptions can be added here -->
     </div>
     <script>
-    function filterCategory(category) {
-        const active = document.querySelector('.category-buttons button.active');
-        const releases = document.getElementsByClassName('release');
+function filterCategory(category) {
+    const active = document.querySelector('.category-buttons button.active');
+    const releases = document.getElementsByClassName('release');
 
-        if (active && active.getAttribute('data-category') === category) {
-            // If the active category is clicked again, remove the active state and show all
-            active.classList.remove('active');
-            Array.from(releases).forEach(release => release.style.display = '');
-        } else {
-            // Otherwise, process as normal, marking the clicked category as active
-            document.querySelectorAll('.category-buttons button').forEach(button => {
-                if (button.getAttribute('data-category') === category) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-            Array.from(reases).forEach(release => {
-                if (release.getAttribute('data-category') === category) {
-                    release.style.display = '';
-                } else {
-                    release.style.display = 'none';
-                }
-            });
-        }
-    }
-
-    document.querySelectorAll('.category-buttons button').forEach(button => {
-        button.addEventListener('click', function() {
-            filterCategory(button.getAttribute('data-category'));
+    if (active && active.getAttribute('data-category') === category) {
+        // If the active category is clicked again, remove the active state and show all
+        active.classList.remove('active');
+        Array.from(releases).forEach(release => release.style.display = '');
+    } else {
+        // Set the clicked button to active and ensure all others are not active
+        document.querySelectorAll('.category-buttons button').forEach(button => {
+            if (button.getAttribute('data-category') === category) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
         });
+
+        // Show only the releases that match the selected category
+        Array.from(releases).forEach(release => {
+            if (release.getAttribute('data-category') === category) {
+                release.style.display = '';
+            } else {
+                release.style.display = 'none';
+            }
+        });
+    }
+}
+
+document.querySelectorAll('.category-buttons button').forEach(button => {
+    button.addEventListener('click', function() {
+        filterCategory(button.getAttribute('data-category'));
     });
+});
 
         
 // Optional: Function to handle active button styling
