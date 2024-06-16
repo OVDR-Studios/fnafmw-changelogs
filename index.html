@@ -31,7 +31,7 @@
     </div>
     <div class="container">
         <!-- Category Buttons -->
-        <div class="category-buttons" style="text-align: center; margin-top: 20px;">
+        <div class="category-buttons">
             <button data-category="updates" onclick="filterCategory('updates')">Updates</button>
             <button data-category="bug-fixes" onclick="filterCategory('bug-fixes')">Bug Fixes</button>
         </div>
@@ -50,39 +50,38 @@
         <!-- More versions with images and descriptions can be added here -->
     </div>
     <script>
-function filterCategory(category) {
-    const active = document.querySelector('.category-buttons button.active');
-    const releases = document.getElementsByClassName('release');
+    function filterCategory(category) {
+        const active = document.querySelector('.category-buttons button.active');
+        const releases = document.getElementsByClassName('release');
+    
+        // Check if the clicked category is already active
+        if (active && active.dataset.category === category) {
+            // If active, remove and show all
+            active.classList.remove('active');
+            Array.from(releases).forEach(release => release.style.display = '');
+        } else {
+            // Handle activating a new category
+            document.querySelectorAll('.category-buttons button').forEach(button => {
+                if (button.dataset.category === category) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
 
-    if (active && active.getAttribute('data-category') === category) {
-        // If the active category is clicked again, remove the active state and show all
-        active.classList.remove('active');
-        Array.from(releases).forEach(release => release.style.display = '');
-    } else {
-        // Set the clicked button to active and ensure all others are not active
-        document.querySelectorAll('.category-buttons button').forEach(button => {
-            if (button.getAttribute('data-category') === category) {
-                button.classList.add('active');
-            } else {
-                button.classList.remove('active');
-            }
-        });
-
-        // Show only the releases that match the selected category
-        Array.from(releases).forEach(release => {
-            if (release.getAttribute('data-category') === category) {
-                release.style.display = '';
-            } else {
-                release.style.display = 'none';
-            }
-        });
+            // Filter releases based on the selected category
+            Array.from(releases).forEach(release => {
+                if (release.dataset.category === category) {
+                    release.style.getComputedStyle.display = '';
+                } else {
+                    release.style.display = 'none';
+                }
+            });
+        }
     }
-}
 
 document.querySelectorAll('.category-buttons button').forEach(button => {
-    button.addEventListener('click', function() {
-        filterCategory(button.getAttribute('data-category'));
-    });
+    button.onclick = function() { filterCategory(this.dataset.category) };
 });
 
     // Enhance the searchVersions function to keep the filter context
