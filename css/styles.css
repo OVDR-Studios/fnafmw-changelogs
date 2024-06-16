@@ -57,7 +57,7 @@ body {
 
 .search-box input[type="text"] {
     flex-grow: 1; /* Allows the input to expand to fill available space */
-    border: 2px solid #ccc;
+    border: 2px solid #E7E7E7;
     padding: 8px;
     border-radius: 10px;
     outline: none;
