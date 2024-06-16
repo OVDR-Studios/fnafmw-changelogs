@@ -102,6 +102,18 @@ body {
     transform: scale(1.02); /* Slightly enlarges the image on hover */
 }
 
+.category-label {
+    display: block;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
 .release {
     clear: both; /* Clears the float, adjusting layout for subsequent content */
     padding: 20px; /* Adds padding around each release for spacing */
