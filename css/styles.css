@@ -224,6 +224,31 @@ a:hover {
     font-size: 18px;
 }
 
+.notice-container {
+    background-color: #FFD700; /* Yellow background */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding for some breathing room */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox to align icon and text */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Space above and below the container */
+}
+
+.notice-container i {
+    font-size: 24px; /* Larger icon */
+    margin-right: 10px; /* Space between icon and text */
+    color: white; /* White icon */
+}
+
+.notice-container a {
+    color: red; /* Red text for links */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.notice-container a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
 .downloads {
     margin-bottom: 25px; /* Space above the 'Back to All Versions' link */
     margin-top: 25px; /* Space above the 'Back to All Versions' link */
