@@ -108,7 +108,7 @@ body {
     background-color: #E6E6E6; /* Green background to match your example, adjust as needed */
     color: black;  /* Text color */
     text-align: center;
-    padding: 2px 8px; /* Adjust padding to make it smaller */
+    padding: 4px 8px; /* Adjust padding to make it smaller */
     border-radius: 5px; /* Rounded corners */
     font-size: 0.85em; /* Slightly smaller text */
     font-weight: bold;
@@ -148,7 +148,7 @@ body {
     font-weight: bold;  /* Bold text */
     margin-left: 8px;  /* Space between the label and the preceding text */
     font-size: 0.6em;  /* Smaller font size relative to surrounding text */
-    top: -2px;  /* Moves the element up by 2 pixels */
+    top: -4px;  /* Moves the element up by 2 pixels */
 }
 
 @media (max-width: 600px) {
