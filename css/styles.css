@@ -48,23 +48,30 @@ body {
 }
 
 .search-box {
-    width: 100%; /* Ensures the search box takes full width of its container */
-    max-width: 400px; /* Optional: constrains the maximum width of the search box */
+    position: relative;
     display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Adds space between the title and the search box */
+    align-items: center; /* This keeps the icon vertically centered */
+    background-color: #fff; /* Set the background color similar to your input field */
+    border-radius: 20px; /* Match this to your input's border-radius */
+    padding: 0 10px; /* Padding around the entire box */
+    width: fit-content; /* This will make the div wrap tightly around the content */
 }
 
 .search-icon {
-    position: absolute; /* Position the icon absolutely within the relative container */
-    left: 10px; /* Distance from the left edge of the input box */
-    color: gray; /* Icon color */
-    z-index: 10; /* Ensure the icon is above the input background */
+    color: gray;
+    position: absolute;
+    left: 15px; /* Adjust this value so the icon fits nicely inside the box */
+    z-index: 10;
 }
 
 #searchInput {
-    padding-left: 30px; /* Make room for the icon inside the input box */
-    width: 100%; /* Optional: make the input take up all available width */
+    flex-grow: 1;
+    border: none; /* Remove any default border */
+    outline: none; /* Remove focus outline */
+    padding-left: 40px; /* Space to prevent text from overlaying the icon */
+    height: 40px; /* Adjust based on your design needs */
+    background-color: transparent; /* Ensure the input has no background */
+    border-radius: 20px; /* Ensure rounded corners if desired */
 }
 
 .search-box input[type="text"] {
