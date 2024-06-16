@@ -55,6 +55,7 @@ body {
     border-radius: 20px; /* Match this to your input's border-radius */
     padding: 0 10px; /* Padding around the entire box */
     width: fit-content; /* This will make the div wrap tightly around the content */
+    height: 35px;
 }
 
 .search-icon {
@@ -69,7 +70,6 @@ body {
     border: none; /* Remove any default border */
     outline: none; /* Remove focus outline */
     padding-left: 40px; /* Space to prevent text from overlaying the icon */
-    height: 35px;
     background-color: transparent; /* Ensure the input has no background */
     border-radius: 20px; /* Ensure rounded corners if desired */
 }
