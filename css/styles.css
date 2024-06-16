@@ -83,7 +83,7 @@ body {
 }
 
 .release-image:hover {
-    filter: brightness(75%); /* Darken the image on hover */
+    filter: brightness(50%); /* Darken the image on hover */
 }
 
 .release {
