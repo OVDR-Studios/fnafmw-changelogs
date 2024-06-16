@@ -14,12 +14,13 @@ jobs:
 
     - name: Update version file
       run: |
-        echo "{\"version\": \"$(date +%Y%m%d.%H%M)\"}" > version.json
+        echo "{\"version\": \"$(date +%Y%m%d.%H%M)\"}" > public/version.json
+        cat public/version.json  # Debug: Print the contents of the file to the log
 
     - name: Commit and push if changed
       run: |
         git config --local user.email "action@github.com"
-        git config --local settings.user.name "GitHub Action"
-        git add version.json
-        git commit -m "Update version file" -a || echo "No changes to commit"
+        git config --local user.name "GitHub Action"
+        git add public/version.json
+        git diff-index --quiet HEAD || git commit -m "Update version file"
         git push
