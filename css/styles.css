@@ -62,6 +62,11 @@ body {
     z-index: 10; /* Ensure the icon is above the input background */
 }
 
+#searchInput {
+    padding-left: 30px; /* Make room for the icon inside the input box */
+    width: 100%; /* Optional: make the input take up all available width */
+}
+
 .search-box input[type="text"] {
     flex-grow: 1; /* Allows the input to expand to fill available space */
     border: 2px solid #E7E7E7;
