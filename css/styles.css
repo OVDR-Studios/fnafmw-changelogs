@@ -243,13 +243,13 @@ a:hover {
 }
 
 .notice-container a {
-    color: green;
+    color: purple;
     text-decoration: none; /* Optional: removes underline from links */
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .notice-container a:hover {
-    color: #005200;
+    color: #A300B3;
 }
 
 .downloads {
