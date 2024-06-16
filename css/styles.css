@@ -69,8 +69,8 @@ body {
     font-size: 1em;
     margin-bottom: 10px; /* Space before the buttons */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 .sort-filters i {
