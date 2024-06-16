@@ -144,10 +144,10 @@ body {
     background-color: #E6E6E6;  /* Yellow background */
     color: black;  /* Text color */
     border-radius: 5px;  /* Rounded corners */
-    padding: 5px 10px;  /* Top and bottom, Left and right padding */
+    padding: 5px 8px;  /* Top and bottom, Left and right padding */
     font-weight: bold;  /* Bold text */
     margin-left: 8px;  /* Space between the label and the preceding text */
-    font-size: 0.8em;  /* Smaller font size relative to surrounding text */
+    font-size: 0.6em;  /* Smaller font size relative to surrounding text */
 }
 
 @media (max-width: 600px) {
@@ -223,7 +223,4 @@ a:hover {
 @media (max-width: 767px) {
     .header h1 {
         font-size: 1.5em;  /* Even smaller font size for mobile */
-    }
-    .release h2 {
-        font-size: 1em;  /* Even smaller font size for mobile */
     }
