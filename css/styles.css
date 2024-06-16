@@ -163,7 +163,7 @@ body {
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
     transition: transform 0.5s ease; /* Smooth transition for scaling */
-    margin-top: 2;
+    margin-top: 0;
 }
 
 a {
