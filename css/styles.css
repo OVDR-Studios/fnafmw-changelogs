@@ -224,3 +224,6 @@ a:hover {
     .header h1 {
         font-size: 1.5em;  /* Even smaller font size for mobile */
     }
+    .release h2 {
+        font-size: 1.5em;  /* Even smaller font size for mobile */
+    }
