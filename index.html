@@ -82,6 +82,15 @@
         });
     });
 
+        
+// Optional: Function to handle active button styling
+document.querySelectorAll('.category-buttons button').forEach(button => {
+    button.addEventListener('click', function() {
+        document.querySelectorAll('.category-buttons button').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+
     // Enhance the searchVersions function to keep the filter context
     function searchVersions() {
         const input = document.getElementById('searchInput').value.toLowerCase();
