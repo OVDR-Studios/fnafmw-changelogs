@@ -148,6 +148,7 @@ body {
     font-weight: bold;  /* Bold text */
     margin-left: 8px;  /* Space between the label and the preceding text */
     font-size: 0.6em;  /* Smaller font size relative to surrounding text */
+    position: relative;  /* Enables relative positioning */
     top: -4px;  /* Moves the element up by 2 pixels */
 }
 
