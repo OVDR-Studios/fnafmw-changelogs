@@ -104,14 +104,13 @@ body {
 
 .category-label {
     display: block;
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    text-align: center;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    border-radius: 10px; /* Rounded corners */
-    font-size: 0.9em;
-    font-weight: bold;
+    background-color: #E6E6E6;  /* Yellow background */
+    color: black;  /* Text color */
+    border-radius: 5px;  /* Rounded corners */
+    padding: 5px 10px;  /* Top and bottom, Left and right padding */
+    font-weight: bold;  /* Bold text */
+    margin-left: 8px;  /* Space between the label and the preceding text */
+    font-size: 0.8em;  /* Smaller font size relative to surrounding text */
 }
 
 .release {
