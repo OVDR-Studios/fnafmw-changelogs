@@ -81,6 +81,10 @@ body {
     float: left; /* Aligns the image to the left of the text */
 }
 
+.release-image:hover {
+    filter: brightness(50%);
+}
+
 .release {
     clear: both; /* Clears the float, adjusting layout for subsequent content */
     padding: 20px; /* Adds padding around each release for spacing */
