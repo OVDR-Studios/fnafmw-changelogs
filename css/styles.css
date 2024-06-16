@@ -227,11 +227,13 @@ a:hover {
 .notice-container {
     background-color: #9b870c; /* Yellow background */
     color: white; /* White text */
-    padding: 15px 20px; /* Padding for some breathing room */
     /* border-radius: 5px; Rounded corners */
     display: flex; /* Flexbox to align icon and text */
-    align-items: center; /* Center items vertically */
-    margin: 20px 0; /* Space above and below the container */
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .notice-container i {
