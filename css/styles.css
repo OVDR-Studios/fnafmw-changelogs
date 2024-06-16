@@ -79,11 +79,11 @@ body {
     margin-right: 20px; /* Adds some space between the image and the text */
     display: block; /* Ensures it behaves like a block element */
     float: left; /* Aligns the image to the left of the text */
-    transition: filter 0.2s ease; /* Smooth transition for filter changes */
+    transition: filter 0.3s ease; /* Smooth transition for filter changes */
 }
 
 .release-image:hover {
-    filter: brightness(50%); /* Darken the image on hover */
+    filter: brightness(60%); /* Darken the image on hover */
 }
 
 .release {
