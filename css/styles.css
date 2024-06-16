@@ -141,13 +141,12 @@ a {
     color: green;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 a:hover {
     text-decoration: none;
     color: #005200;
-    transform: scale(1.02); /* Slightly enlarges the image on hover */
 }
 
 .changeTitle {
