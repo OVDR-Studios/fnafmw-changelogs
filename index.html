@@ -80,12 +80,12 @@
         }
     }
 
-// Attach event listeners after the document is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.category-buttons button').forEach(button => {
-        button.addEventListener('click', () => filterCategory(button.dataset.category));
+    // Attach event listeners after the document is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.category-buttons button').forEach(button => {
+            button.addEventListener('click', () => filterCategory(button.dataset.category));
+        });
     });
-});
 
     // Enhance the searchVersions function to keep the filter context
     function searchVersions() {
