@@ -40,7 +40,8 @@
             <button data-category="updates" onclick="filterCategory('updates')">Updates</button>
             <button data-category="patches" onclick="filterCategory('patches')">Patches</button>
         </div>
-        <div class="container">
+    </div>
+    <div class="container">
             <div class="release" data-version="1.1.0" data-category="updates">
                 <a href="/versions/beta/1.1.0"><img src="/assets/thumbnails/beta110.png" alt="Thumbnail for Version 1.1.0" class="release-image" oncontextmenu="return false;"></a>
                 <div class="category-label">Update</div>
@@ -54,10 +55,9 @@
                 <h2><a href="versions/beta/1.0.1">Beta Version 1.0.1 - Bug Fixes</a></h2>
                 <p class="release-description">A small patch to address initial launch issues and optimize overall performance.</p>
                 <p class="release-date"><i class="fas fa-calendar-alt" style="color: gray;"></i> Released on June 2, 2024</p>
-        </div>
+            </div>
         <!-- More versions with images and descriptions can be added here -->
         </div>
-    </div>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const buttons = document.querySelectorAll('.category-buttons button');
