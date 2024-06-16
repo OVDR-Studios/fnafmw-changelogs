@@ -243,10 +243,11 @@ a:hover {
 .notice-container a {
     color: red; /* Red text for links */
     text-decoration: none; /* Optional: removes underline from links */
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .notice-container a:hover {
-    text-decoration: underline; /* Underline on hover for better user interaction */
+    color: #8B0000; /* Red text for links */
 }
 
 .downloads {
