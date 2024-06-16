@@ -1,0 +1,25 @@
+name: Update Version
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update version file
+      run: |
+        echo "{\"version\": \"$(date +%Y%m%d.%H%M)\"}" > version.json
+
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local settings.user.name "GitHub Action"
+        git add public/version.json
+        git commit -m "Update version file" -a || echo "No changes to commit"
+        git push
