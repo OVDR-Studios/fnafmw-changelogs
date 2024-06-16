@@ -69,6 +69,7 @@ body {
     border: none; /* Remove any default border */
     outline: none; /* Remove focus outline */
     padding-left: 40px; /* Space to prevent text from overlaying the icon */
+    height: 35px;
     background-color: transparent; /* Ensure the input has no background */
     border-radius: 20px; /* Ensure rounded corners if desired */
 }
