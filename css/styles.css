@@ -84,7 +84,7 @@ body {
 
 .release-image:hover {
     filter: brightness(60%); /* Darken the image on hover */
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    transform: scale(1.02); /* Slightly enlarges the image on hover */
 }
 
 .release {
